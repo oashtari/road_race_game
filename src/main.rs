@@ -8,9 +8,6 @@ struct GameState {
     lost: bool,
 }
 
-const PLAYER_SPEED: f32 = 250.0;
-const ROAD_SPEED: f32 = 400.0;
-
 fn main() {
     let mut game = Game::new();
 
@@ -54,6 +51,9 @@ fn main() {
         lost: false,
     });
 }
+
+const PLAYER_SPEED: f32 = 250.0;
+const ROAD_SPEED: f32 = 400.0;
 
 fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
     // game logic goes here
